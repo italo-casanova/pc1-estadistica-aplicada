@@ -1,4 +1,4 @@
 \babel@toc {spanish}{}\relax 
 \beamer@sectionintoc {1}{Problema}{3}{0}{1}
 \beamer@sectionintoc {2}{Objetivos}{5}{0}{2}
-\beamer@sectionintoc {3}{Second section}{11}{0}{3}
+\beamer@sectionintoc {3}{Second section}{12}{0}{3}
