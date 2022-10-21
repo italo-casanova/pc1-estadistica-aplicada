@@ -1,0 +1,185 @@
+\documentclass{beamer}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+
+\usetheme{Madrid}
+\usecolortheme{default}
+
+%------------------------------------------------------------
+%This block of code defines the information to appear in the
+%Title page
+\title[PC1 Estadistica Aplicada] %optional
+{Aplicacion de tecnicas de estimacion y prueba de hipotesis}
+
+\subtitle{Caso: Salario de profesionales}
+
+\author % (optional)
+{
+  Alvarez \and Bautista \and Burga \and
+  Casanova \and  Cuyate
+}
+
+\institute
+{
+  \inst{1}%
+  Facultad de Ingenieria Industrial y de Sistemas\\
+  Universidad Nacional de Ingenieria
+}
+
+\date
+{ Octubre 2022}
+
+% \logo{\includegraphics[height=1cm]{overleaf-logo}}
+
+%End of title page configuration block
+%------------------------------------------------------------
+
+%------------------------------------------------------------
+%The next block of commands puts the table of contents at the
+%beginning of each section and highlights the current section:
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+%------------------------------------------------------------
+
+
+\begin{document}
+
+%The next statement creates the title page.
+\frame{\titlepage}
+
+
+%---------------------------------------------------------
+%This block of code is for the table of contents after
+%the title page
+\begin{frame}
+\frametitle{Table of Contents}
+\tableofcontents
+\end{frame}
+%---------------------------------------------------------
+
+\section{Problema}
+
+\begin{frame}
+\frametitle{Problematica}
+
+floro sobre la problematica
+
+\end{frame}
+
+
+
+%---------------------------------------------------------
+\section{Objetivos}
+
+%---------------------------------------------------------
+%Changing visivility of the text
+\begin{frame}
+
+\frametitle{Objetivos del trabajo}
+
+\begin{alertblock}{General}
+  % Comprobar por medio de herramientas de estadistica inferencial
+  % si, en promedio factores como la educacion o el grado academico
+  % influyen en el exito economico de las personas, asi como verifcar
+  % si estas variables son causa de separcion de las poblaciones
+  Generar informacion relevante para la prediccion de tendencias
+  socio-economicas en el Peru comparando
+\end{alertblock}
+\end{frame}
+
+\begin{frame}
+\frametitle{Objetivos especificos}
+\begin{columns}
+
+\column{0.5\textwidth}
+\begin{itemize}
+    \item Comprobar si \alert{en promedio} las personas con
+    estudios
+    \item objeivo 2
+    \item objeivo 3
+    \item objeivo 4
+    \item objeivo 5
+\end{itemize}
+
+\column{0.5\textwidth}
+
+\begin{itemize}
+    \item objeivo 6
+    \item objeivo 7
+    \item objeivo 8
+    \item objeivo 9
+\end{itemize}
+\end{columns}
+
+\end{frame}
+
+%---------------------------------------------------------
+
+
+%---------------------------------------------------------
+%Example of the \pause command
+\begin{frame}
+In this slide \pause
+
+the text will be partially visible \pause
+
+And finally everything will be there
+\end{frame}
+%---------------------------------------------------------
+
+\section{Second section}
+
+%---------------------------------------------------------
+%Highlighting text
+\begin{frame}
+\frametitle{Sample frame title}
+
+In this slide, some important text will be
+\alert{highlighted} because it's important.
+Please, don't abuse it.
+
+\begin{block}{Remark}
+Sample text
+\end{block}
+
+\begin{alertblock}{Important theorem}
+Sample text in red box
+\end{alertblock}
+
+\begin{examples}
+Sample text in green box. The title of the block is ``Examples".
+\end{examples}
+\end{frame}
+%---------------------------------------------------------
+
+
+%---------------------------------------------------------
+%Two columns
+\begin{frame}
+\frametitle{Two-column slide}
+
+\begin{columns}
+
+\column{0.5\textwidth}
+This is a text in first column.
+$$E=mc^2$$
+\begin{itemize}
+\item First item
+\item Second item
+\end{itemize}
+
+\column{0.5\textwidth}
+This text will be in the second column
+and on a second tought this is a nice looking
+layout in some cases.
+\end{columns}
+\end{frame}
+%---------------------------------------------------------
+
+\end{document}
