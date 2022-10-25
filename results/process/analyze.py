@@ -10,7 +10,8 @@ def find_classes(list_of_lists: list) -> list:
             classes.append(row[0])
     return classes
 
-def find_classes_in_column_qualitative(list_of_lists: list, column: int) -> list:
+def find_classes_in_column_qualitative(list_of_lists: list,
+                                       column: int) -> list:
     """find the classes in a column"""
     classes = []
     # delete the first row
@@ -36,7 +37,8 @@ def visualize_by_column_qualitative(data: list, column: int) -> None:
     plt.bar(classes, counts)
     # plt.show()
 
-def visualize_by_column_floats(data: list, class_name: str, column: int) -> list:
+def visualize_by_column_floats(data: list, class_name:
+                               str, column: int) -> list:
     """visualize the frequency of the data in a column of real numbers
     Outputs the list of numbers in the column filtered by the class name"""
     numbers = []
