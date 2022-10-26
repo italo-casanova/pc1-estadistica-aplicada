@@ -1,3 +1,4 @@
+from csv import list_dialects
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -22,26 +23,26 @@ def find_classes_in_column_qualitative(list_of_lists: list, column: int) -> list
     return classes
 
 
-def visualize_by_column_qualitative(data: list, column: int) -> None:
-    """visualize the frequency of the data in a column"""
+def filter_by_column_qualitative(data: list, filter_column: int,  class_name: str, column: int) -> tuple[list,list]:
+    """visualize the frequency of the data in a column. Returns a tuple containing class_names and its 
+    frequencies"""
     classes = find_classes_in_column_qualitative(data, column)
     counts = []
     for c in classes:
         count = 0
         for row in data:
-            if c == row[column]:
+            if c == row[column] and (class_name == "*" or class_name == row[filter_column]):
                 count += 1
         counts.append(count)
     classes = [c[:10] for c in classes]
-    plt.bar(classes, counts)
-    # plt.show()
+    return (classes, counts)
 
-def visualize_by_column_floats(data: list, class_name: str, column: int) -> list:
+def filter_by_column_floats(data: list, filter_column: int,  class_name: str, column: int) -> list:
     """visualize the frequency of the data in a column of real numbers
     Outputs the list of numbers in the column filtered by the class name"""
     numbers = []
     for row in data[1:]:
-        if class_name == row[0]:
+        if class_name == "*" or class_name == row[filter_column]:
             numbers.append(float(row[column]))
     plt.hist(numbers)
     return numbers
