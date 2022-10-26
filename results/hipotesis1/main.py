@@ -12,6 +12,6 @@ lista_columnas = list( enumerate(lista_listas[0]))
 if __name__ == "__main__":
     print("Desarrollo de la primera hipótesis")
     print(lista_columnas)
-    print(visualize.visualize_by_column_floats(lista_listas, 0, "*", 19))
+    print(visualize.visualize_by_column_floats(lista_listas, 0, "*", 18))
     plt.show()
     
