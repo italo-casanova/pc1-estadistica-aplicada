@@ -1,0 +1,5 @@
+Obejtivo 5: La proporción de Mexicanos tiene un mejor salario que la proporción de peruanos
+Conclusión: Con una significancia de 5% se concluye que las proporciones son iguales.
+Objetivo 8: Las personas de mediana edad poseen una mejor distribución de ingreso que las personas jóvenes
+Conlusión: Con un significancia de 5% se concluye que las personas de mediana edad que vendrían a ser las
+personas con más de 40 años tienen mejor salario que las personas jovenes menores de 40 pero mayores de 17.
