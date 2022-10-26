@@ -45,5 +45,4 @@ def filter_by_column_floats(data: list, filter_column: int,  class_name: str, co
     for row in data[1:]:
         if class_name == "*" or class_name == row[filter_column]:
             numbers.append(float(row[column]))
-    plt.hist(numbers, density=True)
     return numbers

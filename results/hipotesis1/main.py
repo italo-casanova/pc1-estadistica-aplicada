@@ -21,14 +21,25 @@ if __name__ == "__main__":
 
     # remove the outliers that are 2.5 deviations of the median with numpy
     data_ingresos = np.array(data_ingresos)
-    data_ingresos = data_ingresos[abs(data_ingresos - np.median(data_ingresos)) < 2.5 * np.std(data_ingresos)]
+    data_ingresos = data_ingresos[abs(data_ingresos - np.mean(data_ingresos)) < 2.5 * np.std(data_ingresos)]
 
-    # show in a histogram as probability density
+
+    # standardize the data before the tests
+    data_ingresos = (data_ingresos - np.mean(data_ingresos)) /np.std(data_ingresos)
     plt.hist(data_ingresos, density=True)
+    # plot a normal distribution with the same mean and standard deviation
+    plt.plot(np.linspace(-3, 3, 100), stats.norm.pdf(np.linspace(-3, 3, 100), 0, 1))
+    # plot a t distribution with the same mean and standard deviation and 2 degrees of freedom
+    plt.plot(np.linspace(-3, 3, 100), stats.t.pdf(np.linspace(-3, 3, 100), 2, 0, 1))
+    # run normality tests in scipy
+    print(stats.jarque_bera(data_ingresos))
+    print(stats.kstest(data_ingresos, stats.norm.cdf))
 
-    # display a normal distributions with the same mean and standard deviation of the data
-    plt.plot(np.linspace(np.min(data_ingresos), np.max(data_ingresos), 100), stats.norm.pdf(np.linspace(np.min(data_ingresos), np.max(data_ingresos), 100), np.mean(data_ingresos), np.std(data_ingresos)))
 
     # render the histograms
+    plt.show()
+
+    # plot a qq plot
+    stats.probplot(data_ingresos, dist="norm", plot=plt)
     plt.show()
 
