@@ -1,0 +1,12 @@
+Importancia 1
+Saber si las horas invertidas en el trabajo son proporcionales a la ganancia de una persona. Malos rumores mencionan que personas que no hacen nada ganan bastante dinero.
+OBJETIVO 1
+determinar si el promedio de horas de la poblacion que gana más de 50K es superior al promedio de horas de la poblacion que gana menos de 50K al año
+Conclusión1
+Con un NS del 5% la población que gana más de 50k al año trabaja más horas en promedio que los que ganan menos de 50k. 
+Importancia 2
+Saber en que pais las mujeres tienen mayor oportunidad de puestos de trabajo si en los Estados Unido o Mexico. Poder imitar y conocer mejor su modelo para que exista cada vez más mujeres en los puestos de trabajo.
+objetivo2
+Determinar las proporciones de trabajadores femeninas en los paises de Estados UnIdos y Mexico.
+Conclusion.
+Con un NS del 5% se puede afirmar que hay mas puestos de trabajo femenino en la poblacion de los Estados Unidos que en las de Mexico. Esto se puede deber a que en Estados Unidos hay menos machismos, las leyes son más favorables.
