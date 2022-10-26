@@ -11,7 +11,8 @@ def find_classes(list_of_lists: list) -> list:
             classes.append(row[0])
     return classes
 
-def find_classes_in_column_qualitative(list_of_lists: list, column: int) -> list:
+def find_classes_in_column_qualitative(list_of_lists: list,
+                                       column: int) -> list:
     """find the classes in a column"""
     classes = []
     # delete the first row

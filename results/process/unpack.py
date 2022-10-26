@@ -1,4 +1,4 @@
-# read PC1.csv 
+# read PC1.csv
 # unpack the data into a list of lists
 # print the data
 
@@ -13,3 +13,11 @@ def unpack(path_name: str) -> list:
     # close the file
     csvfile.close()
     return data
+
+
+
+with open("../../data/Software_Professional_Salaries.csv", newline='') as csvfile:
+    reader = csv.reader(csvfile, delimiter=',')
+    data = [row for row in reader]
+
+    print(data)
