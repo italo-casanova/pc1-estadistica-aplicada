@@ -41,9 +41,10 @@ def filter_by_column_qualitative(data: list, filter_column: int,  class_name: st
     classes = [c[:10] for c in classes]
     return (classes, counts)
 
-def filter_by_column_floats(data: list, filter_column: int,  class_name: str, column: int) -> list:
+def filter_by_column_floats(data: list, filter_column: int,  class_name: str, column: int, **kwargs) -> list:
     """visualize the frequency of the data in a column of real numbers
     Outputs the list of numbers in the column filtered by the class name"""
+
     numbers = []
     for row in data[1:]:
         if class_name == "*" or class_name in row[filter_column]:
