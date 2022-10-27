@@ -1,3 +1,4 @@
+Cuyate
 Obejtivo 5: La proporción de Mexicanos tiene un mejor salario que la proporción de peruanos
 Conclusión: Con una significancia de 5% se concluye que las proporciones son iguales.
 

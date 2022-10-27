@@ -1,6 +1,8 @@
 \documentclass{beamer}
 \usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{ {./images/}}
 
 \usetheme{Madrid}
 \usecolortheme{default}
@@ -43,7 +45,7 @@
 \AtBeginSection[]
 {
   \begin{frame}
-    \frametitle{Table of Contents}
+    \frametitle{Tabla de Contenido}
     \tableofcontents[currentsection]
   \end{frame}
 }
@@ -60,7 +62,7 @@
 %This block of code is for the table of contents after
 %the title page
 \begin{frame}
-\frametitle{Table of Contents}
+\frametitle{Tabla de Contenido}
 \tableofcontents
 \end{frame}
 %---------------------------------------------------------
@@ -87,7 +89,6 @@ socio-economicas se ha procedio a realizar un analisis estadistico sobre
 \section{Objetivos}
 
 %---------------------------------------------------------
-%Changing visivility of the text
 \begin{frame}
 
 \frametitle{Objetivos del trabajo}
@@ -95,7 +96,7 @@ socio-economicas se ha procedio a realizar un analisis estadistico sobre
 \begin{alertblock}{General}
   Generar informacion relevante para la prediccion de tendencias
   socio-economicas en el mundo tomando como referencia datos
-  que provienen mayoritariamente de Estados Unidos y Mexico
+  provenientes de distintos paises.
 \end{alertblock}
 \end{frame}
 
@@ -105,29 +106,27 @@ socio-economicas se ha procedio a realizar un analisis estadistico sobre
 \begin{columns}
 \column{0.5\textwidth}
 
-\begin{itemize}
-    \item La distribucion de ingresos de las personas jovenes sigue
-      la ley normal
-    \item Las personas que trabajan una cantidad de horas superior a
-      la media tienen una mejor destribucion de ingresos que aquellas
-      que no lo hacen
-    \item En paises desarrollados, como estados unidos, existe una mayor cantidad
-      de mujeres con puestos de trabajos relacionados a ingenieria que en paises en via
-      de desarrollo
-\end{itemize}
+  \begin{itemize}
+      \item La distribucion de ingresos de  sigue *
+        la ley normal
+      \item Las personas que trabajan una cantidad de horas superior a *
+        la media tienen una mejor destribucion de ingresos que aquellas
+        que no lo hacen
+      \item En paises desarrollados existe una mayor cantidad *
+        de mujeres con puestos de trabajos relacionados a ingenieria que en paises en via
+        de desarrollo
+  \end{itemize}
 
 \column{0.5\textwidth}
 
-\begin{itemize}
-    \item El promedio de ingresos de la poblacion mexicana es mayor
-      que la peruana
-    \item Las personas de mediana edad poseen una mejor distribución
-      de ingreso que las personas jóvenes
-    \item El \alert{promedio de ingresos} de las personas que trabajan
-      una cantidad de horas superior a la mediana es mayor al promedio
-      de ingreso de personas que laburan una cantidad menor de horas
-      que la mediana
-\end{itemize}
+  \begin{itemize}
+      \item Los cientificos de datos poseen un mejor distribucion de ingresos *
+        que los ingenieros de datos
+      \item El sector \textit{(publico / privado)} al que pertenece un trabajador *
+        es causa de la diferencia de salarios
+      \item El promedio de ingresos de la poblacion mexicana es mayor *
+        que la peruana
+  \end{itemize}
 \end{columns}
 \end{frame}
 
@@ -136,12 +135,13 @@ socio-economicas se ha procedio a realizar un analisis estadistico sobre
 \begin{frame}
 \frametitle{Hipotesis especificas}
   \begin{itemize}
+      \item El \alert{promedio de ingresos} de las personas que trabajan
+        una cantidad de horas superior a la mediana es mayor al promedio
+        de ingreso de personas que laburan una cantidad menor de horas
+        que la mediana
       \item Las personas de mediana edad poseen una mejor distribucion
-        de ingreso que las personas jovenes
-      \item La especializacion es causa de la separacion en 2 grupos de
-        la poblacion segun sus ingresos
-      \item Las peronas con el maximo grado academico tienen una distribucion
-        distinta y con un promedio mayor a las demas categorias de educacion
+        de ingreso que las personas jovenes *
+      \item Pareto
   \end{itemize}
 
   \textbf{Cada hipotesis tiene asociado el objetivo de comprobar
@@ -200,10 +200,62 @@ socio-economicas se ha procedio a realizar un analisis estadistico sobre
 %---------------------------------------------------------
 \section{Resultados}
 \begin{frame}
-\frametitle{Resultados}
+\frametitle{Hipotesis 1}
+  Se usara el test de \textit{Kolmogorov-Smirnov}, donde se plantea
+  que la distribucion de ingresos en la poblacin de ciencia de datos
+  no sigue la ley normal
+\begin{figure}[t]
+  \caption{Data sin estandarizar}
+  \includegraphics[width=6cm]{Figure_1.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Hipotesis 1}
+\begin{figure}[t]
+  \caption{Data estandarizada y sin outliers}
+  \includegraphics[width=6cm]{data_sin_outliers.jpeg}
+\end{figure}
+  \textbf{Puede parecer una distribucion Normal}
 
 \end{frame}
 
+\begin{frame}
+\frametitle{Hipotesis 1}
+\begin{figure}[t]
+  \caption{Grafica Q-Q}
+  \includegraphics[width=6cm]{grafiaq-q.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Resultados hipotesis 1}
+  Ever no te olvides del floro
+\end{frame}
+
+\begin{frame}
+\frametitle{Hipotesis 2}
+\begin{figure}[h]
+  \caption{Distribución de ingresos de ingenieros de
+  software en la India}
+  \includegraphics[width=8cm]{distribucion_ingresos_sw.jpeg}
+\end{figure}
+
+  se puede notar como existen \textit{2 grupos en la poblacion}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Hipotesis 2}
+\begin{figure}[h]
+  \caption{Distribución de ingresos de ingenieros de
+  software en la India}
+  \includegraphics[width=8cm]{distribucion_ingresos_sw.jpeg}
+\end{figure}
+
+  se puede notar como existen \textit{2 grupos en la poblacion}
+\end{frame}
 \section{Conclusiones}
 
 %---------------------------------------------------------

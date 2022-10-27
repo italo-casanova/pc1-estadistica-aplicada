@@ -1,6 +1,11 @@
-Objetivos: 
-1. Estimar si la el salario promedio de un cientifico de datos es mayor que el de un ingeniero de datos.
+Bautista
+
+Objetivos:
+1. Estimar si la el salario promedio de un cientifico de datos es
+mayor que el de un ingeniero de datos.
+
 Conclusión: Con un NS de 5% en informacion de las muestras, no existe evidencia suficiente para afirmar que los salarios de los data science son mayores que los de data engineer. Se podria afirmar que  este salario tambien depende del tipo de empresa en donde se trabaje, ubicacion de la mepresa en que se trabaja, al sector en que se necesite uno de estos tipos de profesionales, etc.
 
-2. Se desea hacer una estimación para determinar la mejor propuesta laboral en relacion a los salarios que ofrecen una compñia privado y una publica.
-Conlcusión: Con un NS de 5% en informacion de las muestras, no existe evidencia suficiente para afirmar que los salarios en compañias publicas son mayores que en las privadas. Se podria afirmar que  este salario de acuerdo al tipo de empresa , depende a la ubicacion de la empresa, al sector que pertenezca, etc. 
+2. Se desea hacer una estimación para determinar la mejor propuesta
+laboral en relacion a los salarios que ofrecen una compñia privado y una publica.
+Conlcusión: Con un NS de 5% en informacion de las muestras, no existe evidencia suficiente para afirmar que los salarios en compañias publicas son mayores que en las privadas. Se podria afirmar que  este salario de acuerdo al tipo de empresa , depende a la ubicacion de la empresa, al sector que pertenezca, etc.

@@ -9,7 +9,7 @@ import process.unpack as unpack
 import process.analyze as analyzer
 import process.visualize as visualize
 
-data_of_sw = unpack.unpack("data\Software_Professional_Salaries.csv")
+data_of_sw = unpack.unpack("data//Software_Professional_Salaries.csv")
 columnas_sw = list( enumerate(data_of_sw[0]))
 
 if __name__ == "__main__":
@@ -40,13 +40,13 @@ if __name__ == "__main__":
     plt.show()
 
     #plot a pareto distribution with the same mean and standard deviation of the data
-    
+
     # assuming the data follows a pareto distribution, calculate the parameters of the distribution
     print(stats.pareto.fit(sw_ingresos))
     xm_pareto = stats.pareto.fit(sw_ingresos)[0]
     alpha_pareto = stats.pareto.fit(sw_ingresos)[1]
 
-    # run normality tests in scipy  
+    # run normality tests in scipy
 
 
     # generate data from a normal distribution
