@@ -27,14 +27,17 @@ def find_classes_in_column_qualitative(list_of_lists: list,
 def filter_by_column_qualitative(data: list, filter_column: int,  class_name: str, column: int) -> tuple[list,list]:
     """visualize the frequency of the data in a column. Returns a tuple containing class_names and its 
     frequencies"""
+
     classes = find_classes_in_column_qualitative(data, column)
     counts = []
     for c in classes:
         count = 0
         for row in data:
-            if c == row[column] and (class_name == "*" or class_name == row[filter_column]):
+            if c == row[column] and (class_name == "*" or class_name in row[filter_column]):
                 count += 1
         counts.append(count)
+
+    # truncating the string to 10 characters
     classes = [c[:10] for c in classes]
     return (classes, counts)
 
@@ -43,6 +46,6 @@ def filter_by_column_floats(data: list, filter_column: int,  class_name: str, co
     Outputs the list of numbers in the column filtered by the class name"""
     numbers = []
     for row in data[1:]:
-        if class_name == "*" or class_name == row[filter_column]:
+        if class_name == "*" or class_name in row[filter_column]:
             numbers.append(float(row[column]))
     return numbers
