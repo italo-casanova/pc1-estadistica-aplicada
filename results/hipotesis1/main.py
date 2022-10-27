@@ -9,7 +9,7 @@ import process.unpack as unpack
 import process.analyze as analyzer
 import process.visualize as visualize
 
-data_of_ds = unpack.unpack("data\data_science.csv")
+data_of_ds = unpack.unpack("data//data_science.csv")
 columnas_ds = list( enumerate(data_of_ds[0]))
 
 if __name__ == "__main__":
@@ -18,7 +18,7 @@ if __name__ == "__main__":
     # "*" is as a wildcard
     ds_ingresos = analyzer.filter_by_column_floats(data_of_ds, 0, "*", 18)
 
-    plt.hist(ds_ingresos)
+    # plt.hist(ds_ingresos)
 
     # remove the outliers that are 2.5 deviations of the median with numpy
     ds_ingresos = np.array(ds_ingresos)
@@ -26,7 +26,7 @@ if __name__ == "__main__":
 
     # standardize the data before the tests
     ds_ingresos = (ds_ingresos - np.mean(ds_ingresos)) /np.std(ds_ingresos)
-    # plt.hist(ds_ingresos, density=True)
+    plt.hist(ds_ingresos, density=True)
     
     # # plot a normal distribution with the same mean and standard deviation
     # plt.plot(np.linspace(-3, 3, 100), stats.norm.pdf(np.linspace(-3, 3, 100), 0, 1))
