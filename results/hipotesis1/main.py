@@ -18,7 +18,7 @@ if __name__ == "__main__":
     # "*" is as a wildcard
     ds_ingresos = analyzer.filter_by_column_floats(data_of_ds, 0, "*", 18)
 
-    plt.hist(ds_ingresos)
+    # plt.hist(ds_ingresos)
 
     # remove the outliers that are 2.5 deviations of the median with numpy
     ds_ingresos = np.array(ds_ingresos)

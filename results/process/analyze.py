@@ -45,8 +45,14 @@ def filter_by_column_floats(data: list, filter_column: int,  class_name: str, co
     """visualize the frequency of the data in a column of real numbers
     Outputs the list of numbers in the column filtered by the class name"""
 
-    numbers = []
-    for row in data[1:]:
-        if class_name == "*" or class_name in row[filter_column]:
-            numbers.append(float(row[column]))
-    return numbers
+    if "exclude" in kwargs:
+        exclude = kwargs["exclude"]
+        if exclude == True:
+            return [float(row[column]) for row in data[1:] if class_name not in  row[filter_column]]
+
+    # numbers = []
+    # for row in data[1:]:
+    #     if class_name == "*" or class_name in row[filter_column]:
+    #         numbers.append(float(row[column]))
+    return [float(row[column]) for row in data[1:] 
+    if class_name in  row[filter_column] or class_name == "*"]

@@ -13,29 +13,41 @@ data_of_sw = unpack.unpack("data//Software_Professional_Salaries.csv")
 columnas_sw = list( enumerate(data_of_sw[0]))
 
 if __name__ == "__main__":
-    print("Desarrollo de la primera hipótesis")
+    print("Desarrollo de la segunda hipótesis")
     print(columnas_sw)
 
     # "*" is as a wildcard
-    sw_ingresos = analyzer.filter_by_column_floats(data_of_sw, 1, "Fresher", 3)
-
+    sw_ingresos = analyzer.filter_by_column_floats(data_of_sw, 1, "Fresher", 3, exclude= True)
+    print(len(sw_ingresos))
 
     # remove the outliers that are 2.5 deviations of the median with numpy
 
     sw_ingresos = np.array(sw_ingresos)
     sw_ingresos = sw_ingresos[abs(sw_ingresos - np.median(sw_ingresos)) < 3 * np.std(sw_ingresos)]
 
-    # for i in analyzer.find_classes_in_column_qualitative(data_of_sw, 1):
-    #     print(i)
-    #     sw_filtered = analyzer.filter_by_column_floats(data_of_sw, 1, i, 3)
-    #     sw_filtered = np.array(sw_filtered)
-    #     sw_filtered = sw_filtered[abs(sw_filtered - np.median(sw_filtered)) < 3 * np.std(sw_filtered)]
-    #     plt.hist(sw_filtered, label=i, bins = 100)
-    #     plt.legend()
-    #     plt.show()
-
     # sw_ingresos = (sw_ingresos - np.mean(sw_ingresos)) /1
-    plt.hist(sw_ingresos, density=True, bins = 100 )
+    # print("Media: ", np.mean(sw_ingresos))
+    # print("Mediana: ", np.median(sw_ingresos))
+    # plt.hist(sw_ingresos, density=True, bins = 100 )
+
+    for i in analyzer.find_classes_in_column_qualitative(data_of_sw, 1):
+        
+        sw_filtered = analyzer.filter_by_column_floats(data_of_sw, 1, i, 3)
+        
+        if len(sw_filtered) < 100:
+            continue
+
+        sw_filtered = np.array(sw_filtered)
+        sw_filtered = sw_filtered[abs(sw_filtered - np.median(sw_filtered)) < 3 * np.std(sw_filtered)]
+
+        if(np.median(sw_filtered) > 500000):
+            continue
+
+        plt.hist(sw_filtered, label=i, bins = 100)
+        plt.legend()
+        print(i, "Media: ", np.mean(sw_filtered))
+        print("tamaño: ", len(sw_filtered))
+        plt.show()
 
     plt.show()
 
