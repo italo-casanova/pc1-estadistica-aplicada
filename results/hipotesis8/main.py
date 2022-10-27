@@ -5,7 +5,6 @@ import scipy.stats as stats
 
 # setting the path to the root of the project
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
 import process.unpack as unpack
 import process.analyze as analyzer
 import process.visualize as visualize
@@ -20,7 +19,8 @@ if __name__ == "__main__":
     print(ds_cols)
 
     # "*" is as a wildcard
-    data_ingresos = analyzer.filter_by_column_floats(data, 0, "*", 18)
+    sw_data_income = analyzer.filter_by_column_floats(data_sw, 0, "*", 18)
+    ds_data_income = analyzer.filter_by_column_floats(data_ds, 0, "*", 18)
 
     plt.hist(sw_data_income, density=True)
     plt.hist(ds_data_income, density=True)

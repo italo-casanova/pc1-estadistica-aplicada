@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.10.20)  25 OCT 2022 17:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.10.19)  25 OCT 2022 23:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -929,19 +929,19 @@ Overfull \hbox (232.87024pt too wide) has occurred while \output is active
 [6
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 131
+LaTeX Font Info:    Trying to load font information for U+msa on input line 132
 .
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 131
+LaTeX Font Info:    Trying to load font information for U+msb on input line 132
 .
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 131.
+ut line 132.
 
 (/usr/share/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
@@ -963,7 +963,7 @@ Overfull \hbox (232.87024pt too wide) has occurred while \output is active
 ]
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 162.
+(Font)              using `OT1/cmss/bx/n' instead on input line 163.
 
 
 Overfull \hbox (232.87024pt too wide) has occurred while \output is active
@@ -1048,10 +1048,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 528960BDA5699252FFF1F30257C17B7B;367.
  ) 
 Here is how much of TeX's memory you used:
- 23329 strings out of 478238
- 451931 string characters out of 5850455
+ 23330 strings out of 478238
+ 451939 string characters out of 5850455
  718775 words of memory out of 5000000
- 41050 multiletter control sequences out of 15000+600000
+ 41051 multiletter control sequences out of 15000+600000
  477554 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,435b,909s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1060,7 +1060,7 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmssi10.pfb>
-Output written on main.pdf (16 pages, 107177 bytes).
+Output written on main.pdf (16 pages, 107316 bytes).
 PDF statistics:
  586 PDF objects out of 1000 (max. 8388607)
  509 compressed objects within 6 object streams
