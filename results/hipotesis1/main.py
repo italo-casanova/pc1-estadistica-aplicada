@@ -9,7 +9,7 @@ import process.unpack as unpack
 import process.analyze as analyzer
 import process.visualize as visualize
 
-data_of_ds = unpack.unpack("data\data_science.csv")
+data_of_ds = unpack.unpack("data//data_science.csv")
 columnas_ds = list( enumerate(data_of_ds[0]))
 
 if __name__ == "__main__":
@@ -27,14 +27,14 @@ if __name__ == "__main__":
     # standardize the data before the tests
     ds_ingresos = (ds_ingresos - np.mean(ds_ingresos)) /np.std(ds_ingresos)
     # plt.hist(ds_ingresos, density=True)
-    
+
     # # plot a normal distribution with the same mean and standard deviation
     # plt.plot(np.linspace(-3, 3, 100), stats.norm.pdf(np.linspace(-3, 3, 100), 0, 1))
-    
+
     # # plot a t distribution with the same mean and standard deviation and 2 degrees of freedom
     # plt.plot(np.linspace(-3, 3, 100), stats.t.pdf(np.linspace(-3, 3, 100), 2, 0, 1))
 
-    # run normality tests in scipy  
+    # run normality tests in scipy
     print(stats.jarque_bera(ds_ingresos))
     print(stats.kstest(ds_ingresos, stats.norm.cdf))
 

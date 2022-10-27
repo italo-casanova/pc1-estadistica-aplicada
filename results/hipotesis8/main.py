@@ -9,8 +9,8 @@ import process.unpack as unpack
 import process.analyze as analyzer
 import process.visualize as visualize
 
-data_sw = unpack.unpack("data\Software_Professional_Salaries.csv")
-data_ds = unpack.unpack("data\data_science.csv")
+data_sw = unpack.unpack("data//Software_Professional_Salaries.csv")
+data_ds = unpack.unpack("data//data_science.csv")
 sw_cols = list( enumerate(data_sw[0]))
 ds_cols = list( enumerate(data_ds[0]))
 
