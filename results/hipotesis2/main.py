@@ -1,4 +1,5 @@
 from calendar import c
+from math import dist
 import os, sys
 import matplotlib.pyplot as plt
 import numpy as np
@@ -55,6 +56,12 @@ def filter_group(data_list) -> tuple[list, min, sum]:
 
 
 
+x_m = 1
+alpha = 0.7
+size = 10
+divisions = size * 100
+gamma = stats.gamma(1, 1, 1/alpha)
+rv = stats.pareto(alpha, 0, x_m)
 
 if __name__ == "__main__":
     print("Desarrollo de la segunda hipótesis")
@@ -64,36 +71,48 @@ if __name__ == "__main__":
     sw_ingresos = analyzer.filter_by_column_floats(data_of_sw, 1, "*", 3)
     print(len(sw_ingresos))
 
+
     sw_ingresos = np.array(sw_ingresos)
     sw_ingresos = sw_ingresos[abs(sw_ingresos - np.median(sw_ingresos)) < 3 * np.std(sw_ingresos)]
     
-    sw_ingresos, min, sum = filter_group(list(sw_ingresos))
+    plt.hist(sw_ingresos, density=True, bins=100, label="Software Professional Salaries")
+    plt.show()
+    sw_ingresos, min, sum_group = filter_group(list(sw_ingresos))
+
+    plt.hist(sw_ingresos, density=True, bins=100, label="Software Professional Salaries")
+    plt.show()
+
 
     sw_ingresos = np.array(sw_ingresos)
     sw_ingresos = sw_ingresos - min -200000 - 100000 
-    sw_ingresos = 2.7*sw_ingresos / 1e6 + 1
-    # count, bins, _ = plt.hist((sw_ingresos),bins= 15, density = True)
+    sw_ingresos = 2.5*sw_ingresos / 1e6 + 1
 
-    # pareto distribution to fit the data
-    x_m = 1
-    alpha = 0.45
-    # print(stats.pareto.fit(sw_ingresos))
-    # plot pdf 
-    # plt.show()
-    size = 10
-    divisions = size * 100
-    # plt.plot(np.linspace(0, size, divisions), stats.pareto.pdf(np.linspace(0, size, divisions),scale= x_m, b= alpha, loc= 0))
-    # plt.plot(np.linspace(0, size, divisions), stats.pareto.pdf(np.linspace(0, size, divisions),alpha, 0, x_m))
-    gamma = stats.gamma(1)
+    plt.hist(sw_ingresos, bins=15, density=True)
+    count, bins = np.histogram(sw_ingresos, bins=1000, density=True)
+    pdf = count / sum(count)
     plt.plot(np.linspace(0, size, divisions), gamma.pdf(np.linspace(0, size, divisions)))
-    
+    plt.show()
+
+    cumulative = np.cumsum(pdf)
+    plt.plot(bins[:-1], cumulative, c='blue')
+
+    # plt.show()
+    # draw bins and pdf as x,y points
+    # plt.plot(np.linspace(0, size, divisions), stats.pareto.pdf(np.linspace(0, size, divisions),alpha, 0, x_m))
+    plt.plot(np.linspace(0, size, divisions), gamma.cdf(np.linspace(0, size, divisions)))
+    # plt.plot(np.linspace(0, size, divisions), rv.cdf(np.linspace(0, size, divisions)), color = "red")
 
     # render the histograms
     plt.show()
 
     # draw a qq plot
-    rv = stats.pareto(alpha, 0, x_m)
-    stats.probplot(sw_ingresos, dist=stats.gamma(1), plot=plt)
+    stats.probplot(sw_ingresos, dist=gamma, plot=plt)
+
+    # kolmogorov-smirnov test
+    print(stats.kstest(sw_ingresos, cdf=gamma.cdf))
+
+    # calculate the p-value of a kolmogorov-smirnov test given the statistic
+    print(stats.kstwobign.sf(0.1))
 
     # plot a qq plot
     plt.show()
