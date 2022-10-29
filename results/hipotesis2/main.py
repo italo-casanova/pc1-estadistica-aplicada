@@ -89,7 +89,7 @@ if __name__ == "__main__":
     plt.show()
 
     # draw a qq plot
-    stats.probplot(sw_ingresos, stats.pareto, sparams=(x_m, 1), plot=plt)
+    stats.probplot(sw_ingresos, dist=stats.pareto, sparams=(alpha,1,x_m), plot=plt)
 
     # plot a qq plot
     plt.show()
