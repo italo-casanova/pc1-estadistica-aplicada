@@ -16,7 +16,7 @@ def filter_group(data_list) -> tuple[list, min, sum]:
     # slice the data of floats in 1000 bins of equal size and return the frequency/density of each bin 
     # create a new list including only the data of the bins that contain a density > 0.3
 
-    FILTER_NUMBER = 400 # number of bins to be filtered
+    FILTER_NUMBER = 200 # number of bins to be filtered
 
     data_list.sort()
     data_range = data_list[-1] - data_list[0]
@@ -40,9 +40,9 @@ def filter_group(data_list) -> tuple[list, min, sum]:
             current_list.append(float(data_list[i_list]))
             i_list += 1
             
-        if density[i] > 4.1e-5:
+        if density[i] > 4.1e-6:
             min = data_list[0]+width*(i+1)
-        if density[i] > 5e-6 :
+        if density[i] > 1e-6 :
             list_res += current_list
 
     print("ilist", i_list)
@@ -88,7 +88,7 @@ if __name__ == "__main__":
     # plot the data
     ax1.hist(sw_data_income_bangalore, bins=20, color="blue")
     ax2.hist(sw_data_income_delhi, bins=100, color="red")
-    
+
     # set the title
     ax1.set_title("Bangalore")
     ax2.set_title("Delhi")
