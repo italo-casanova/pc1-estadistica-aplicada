@@ -2,5 +2,4 @@
 \beamer@sectionintoc {1}{Problema}{3}{0}{1}
 \beamer@sectionintoc {2}{Objetivos}{5}{0}{2}
 \beamer@sectionintoc {3}{Importancia de los objetivos}{9}{0}{3}
-\beamer@sectionintoc {4}{Resultados}{13}{0}{4}
-\beamer@sectionintoc {5}{Conclusiones}{21}{0}{5}
+\beamer@sectionintoc {4}{Resultados y Conclusiones}{12}{0}{4}

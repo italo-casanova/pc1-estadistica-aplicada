@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.10.20)  28 OCT 2022 18:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.10.20)  28 OCT 2022 19:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -973,7 +973,7 @@ Overfull \hbox (232.87024pt too wide) has occurred while \output is active
 ]
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 164.
+(Font)              using `OT1/cmss/bx/n' instead on input line 184.
 
 
 Overfull \hbox (232.87024pt too wide) has occurred while \output is active
@@ -989,13 +989,6 @@ Overfull \hbox (232.87024pt too wide) has occurred while \output is active
 
 [11
 
-]
-Overfull \hbox (232.87024pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[12
-
 ] (./main.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -1004,21 +997,41 @@ Overfull \hbox (232.87024pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
-[13
+[12
 
 ]
+<./images//Figure_1.png, id=407, 758.1123pt x 732.0951pt>
+File: ./images//Figure_1.png Graphic file (type png)
+<use ./images//Figure_1.png>
+Package pdftex.def Info: ./images//Figure_1.png  used on input line 211.
+(pdftex.def)             Requested size: 142.26378pt x 137.3792pt.
+
+Overfull \hbox (232.87024pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+[13
+
+ <./images//Figure_1.png>]
+<./images//data_sin_outliers.jpeg, id=437, 481.8pt x 361.35pt>
+File: ./images//data_sin_outliers.jpeg Graphic file (type jpg)
+<use ./images//data_sin_outliers.jpeg>
+Package pdftex.def Info: ./images//data_sin_outliers.jpeg  used on input line 2
+21.
+(pdftex.def)             Requested size: 170.71652pt x 128.03477pt.
+
 Overfull \hbox (232.87024pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 [14
 
-]
-<./images//Figure_1.png, id=504, 758.1123pt x 732.0951pt>
-File: ./images//Figure_1.png Graphic file (type png)
-<use ./images//Figure_1.png>
-Package pdftex.def Info: ./images//Figure_1.png  used on input line 247.
-(pdftex.def)             Requested size: 142.26378pt x 137.3792pt.
+ <./images//data_sin_outliers.jpeg>]
+<./images//grafiaq-q.png, id=465, 758.1123pt x 732.0951pt>
+File: ./images//grafiaq-q.png Graphic file (type png)
+<use ./images//grafiaq-q.png>
+Package pdftex.def Info: ./images//grafiaq-q.png  used on input line 231.
+(pdftex.def)             Requested size: 170.71652pt x 164.84833pt.
 
 Overfull \hbox (232.87024pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
@@ -1026,34 +1039,21 @@ Overfull \hbox (232.87024pt too wide) has occurred while \output is active
 
 [15
 
- <./images//Figure_1.png>]
-<./images//data_sin_outliers.jpeg, id=533, 481.8pt x 361.35pt>
-File: ./images//data_sin_outliers.jpeg Graphic file (type jpg)
-<use ./images//data_sin_outliers.jpeg>
-Package pdftex.def Info: ./images//data_sin_outliers.jpeg  used on input line 2
-57.
-(pdftex.def)             Requested size: 170.71652pt x 128.03477pt.
-
+ <./images//grafiaq-q.png>]
 Overfull \hbox (232.87024pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 [16
 
- <./images//data_sin_outliers.jpeg>]
-<./images//grafiaq-q.png, id=560, 758.1123pt x 732.0951pt>
-File: ./images//grafiaq-q.png Graphic file (type png)
-<use ./images//grafiaq-q.png>
-Package pdftex.def Info: ./images//grafiaq-q.png  used on input line 265.
-(pdftex.def)             Requested size: 170.71652pt x 164.84833pt.
-
+]
 Overfull \hbox (232.87024pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 [17
 
- <./images//grafiaq-q.png>]
+]
 Overfull \hbox (232.87024pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
  []
@@ -1061,16 +1061,12 @@ Overfull \hbox (232.87024pt too wide) has occurred while \output is active
 [18
 
 ]
-<./images//distribucion_ingresos_sw.jpeg, id=615, 481.8pt x 361.35pt>
+<./images//distribucion_ingresos_sw.jpeg, id=604, 481.8pt x 361.35pt>
 File: ./images//distribucion_ingresos_sw.jpeg Graphic file (type jpg)
 <use ./images//distribucion_ingresos_sw.jpeg>
 Package pdftex.def Info: ./images//distribucion_ingresos_sw.jpeg  used on input
- line 287.
-(pdftex.def)             Requested size: 199.16928pt x 149.373pt.
-
-Overfull \vbox (14.37605pt too high) detected at line 287
- []
-
+ line 284.
+(pdftex.def)             Requested size: 170.71652pt x 128.03477pt.
 
 Overfull \hbox (232.87024pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
@@ -1079,41 +1075,11 @@ Overfull \hbox (232.87024pt too wide) has occurred while \output is active
 [19
 
  <./images//distribucion_ingresos_sw.jpeg>]
-File: ./images//distribucion_ingresos_sw.jpeg Graphic file (type jpg)
-<use ./images//distribucion_ingresos_sw.jpeg>
-Package pdftex.def Info: ./images//distribucion_ingresos_sw.jpeg  used on input
- line 299.
-(pdftex.def)             Requested size: 227.62204pt x 170.71672pt.
-
 Overfull \hbox (232.87024pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 [20
-
-] (./main.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-)
-Overfull \hbox (232.87024pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[21
-
-]
-Overfull \hbox (232.87024pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[22
-
-]
-Overfull \hbox (232.87024pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[23
 
 ]
 \tf@nav=\write6
@@ -1133,28 +1099,28 @@ LaTeX Info: Redefining \% on input line 25.
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: AEEC5B99F60D5FEB03448F4DF67CA178;559.
+(rerunfilecheck)             Checksum: E9ED1C5EECB7D026C18FE3FAFA0C88B3;537.
  ) 
 Here is how much of TeX's memory you used:
- 23486 strings out of 478238
- 455452 string characters out of 5850455
+ 23425 strings out of 478238
+ 453948 string characters out of 5850455
  719790 words of memory out of 5000000
- 41175 multiletter control sequences out of 15000+600000
+ 41123 multiletter control sequences out of 15000+600000
  481509 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,435b,909s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-ssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></
-usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (23 pages, 253858 bytes).
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><
+/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on main.pdf (20 pages, 241560 bytes).
 PDF statistics:
- 840 PDF objects out of 1000 (max. 8388607)
- 727 compressed objects within 8 object streams
- 52 named destinations out of 1000 (max. 500000)
- 391 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 711 PDF objects out of 1000 (max. 8388607)
+ 620 compressed objects within 7 object streams
+ 45 named destinations out of 1000 (max. 500000)
+ 275 words of extra memory for PDF output out of 10000 (max. 10000000)
 

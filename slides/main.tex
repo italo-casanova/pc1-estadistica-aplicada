@@ -109,23 +109,23 @@ socio-economicas se ha procedio a realizar un analisis estadistico sobre
   \begin{itemize}
       \item La distribucion de ingresos de  sigue
         la ley normal
+      \item La eleccion de especialidad es causa de la formacion de 2 grupos
+        en la poblacion.
       \item Las personas que trabajan una cantidad de horas superior a
         la media tienen una mejor destribucion de ingresos que aquellas
         que no lo hacen
-      \item En paises desarrollados existe una mayor cantidad
-        de mujeres con puestos de trabajos relacionados a ingenieria que en paises en via
-        de desarrollo
   \end{itemize}
 
 \column{0.5\textwidth}
 
   \begin{itemize}
+      \item En paises desarrollados existe una mayor cantidad
+        de mujeres con puestos de trabajos relacionados a ingenieria que en paises en via
+        de desarrollo
       \item Los cientificos de datos poseen un mejor distribucion de ingresos
         que los ingenieros de datos
       \item El sector \textit{(publico / privado)} al que pertenece un trabajador
         es causa de la diferencia de salarios
-      \item El promedio de ingresos de la poblacion mexicana es mayor
-        que la peruana
   \end{itemize}
 \end{columns}
 \end{frame}
@@ -141,8 +141,8 @@ socio-economicas se ha procedio a realizar un analisis estadistico sobre
         que la mediana
       \item Las personas de mediana edad poseen una mejor distribucion
         de ingreso que las personas jovenes
-      \item La eleccion de especialidad es causa de la formacion de 2 grupos
-        en la poblacion.
+      \item El promedio de ingresos de la poblacion mexicana es mayor
+        que la peruana
   \end{itemize}
 
   \textbf{Cada hipotesis tiene asociado el objetivo de comprobar
@@ -159,32 +159,16 @@ socio-economicas se ha procedio a realizar un analisis estadistico sobre
 \begin{frame}
   \textbf{\textit{
     Acerca de la normalidad de la distribucion de ingesos
-  }} \\
-  \alert{Ever no te olvides del floro}
-\end{frame}
-
-\begin{frame}
-  \textbf{\textit{
-    Sobre los demas objetivos:
   }}
   \\
+  \alert{Ever no te olvides del texto}
+  \newline
 
-  \begin{enumerate}
-      \item analizar causas de la separacion en grupos
-      \item Comparar
-
-  \end{enumerate}
-\end{frame}
-
-\begin{frame}
   \textit{\textbf{
     Sobre la eleccion de especialidad
   }}
-  \newline
 
-  Antes de realizar cualquier tecnica de inferencia es necesario conocer
-  la forma de las distribuciones, incluso antes de analizar la varianza
-  \newline
+  % \newline
 
   Se desea analizar principalmente:
 
@@ -197,48 +181,28 @@ socio-economicas se ha procedio a realizar un analisis estadistico sobre
   \footnotetext[1]{\textit{Analysis of Variance}}
 
 
+\end{frame}
+
+\begin{frame}
+  \textit{\textbf{
+    Sobre los demas objetivos
+  }}
+  \newline
+
+  Se consideraron las hipotesis de tal forma que brinde
+  información relevante para el análisis del mercado laboral
+  para los egresados de la carrera de \textit{Ingenieria de
+  sistemas}
 
 \end{frame}
 
 %---------------------------------------------------------
 
 
-\section{Resultados}
-\begin{frame}
-\frametitle{Hipotesis 1}
-  Se aplicó el test de \textit{Jarque-Bera}, para comprobar si la muestra
-  presenta una \textbf{curtosis} y \textbf{asimetria} correspondientes
-  a una ley normal.
-
-  El estadistico de \textit{Jarque Bera} es asintoticamente un pivote de
-  una \textit{Chi-Cuadrado} y toma como hipotesis nula que los datos de la
-  muestra siguen la ley normal
-
-  \begin{alertblock}{Test de Jarque-Bera}
-    $\textbf{JB} = \frac{n}{6}(S^2 +\frac{1}{4}(K - 3)^3)$, Siendo \textit{n} los grados de libertad
-  \end{alertblock}
-
-  \begin{block}{Estimadores de momentos centrales}
-    \begin{itemize}
-        \item Tercer Momento Central
-
-          $S = \frac{\hat{\mu_3}}{\hat{\sigma}^3}$
-
-        \item  Cuarto Momento Central
-
-          $K = \frac{\hat{\mu_4}}{\hat{\sigma}^4}$
-
-    \end{itemize}
-  \end{block}
-
-\end{frame}
+\section{Resultados y Conclusiones}
 
 \begin{frame}
-
-  Adicionalmente, se usara el test de \textit{Kolmogorov-Smirnov}, donde se plantea
-  que la distribucion de ingresos en la poblacion de ciencia de datos
-  no sigue la ley normal y se comparará con la funcion acumulada teoria
-  de esta
+  \frametitle{Hipotesis 1}
   \begin{figure}[t]
     \caption{Data sin estandarizar}
     \includegraphics[width=5cm]{Figure_1.png}
@@ -262,87 +226,114 @@ socio-economicas se ha procedio a realizar un analisis estadistico sobre
   \caption{Grafica Q-Q}
   \includegraphics[width=6cm]{grafiaq-q.png}
 \end{figure}
-\end{frame}
 
-
-\begin{frame}
-\frametitle{Resultados hipotesis 1}
-  Ever no te olvides del floro
+  \textbf{Se aleja de la distribucion normal}
 \end{frame}
 
 \begin{frame}
-\frametitle{Distribución de software}
-  \alert{Aplicacion del test \textbf{Kolmogórov-Smirnov}}
 
-  En este caso se va a comprar la funcion de distribucion acumulada observada
-  con la de la distribucion teoria de la normal y la de pareto
+  Se aplicó el test de \textit{Jarque-Bera}, para comprobar si la muestra
+  presenta una \textbf{curtosis} y \textbf{asimetria} correspondientes
+  a una ley normal.
 
-\begin{figure}[h]
-  \caption{Distribución de ingresos de ingenieros de
-  software en la India}
-  \includegraphics[width=7cm]{distribucion_ingresos_sw.jpeg}
-\end{figure}
+  El estadistico de \textit{Jarque Bera} es asintoticamente un estimador de
+  una \textit{Chi-Cuadrado} (${\chi_n ^ 2}$) y toma como hipotesis nula que los datos de la
+  muestra siguen la ley normal
 
-  se puede notar como existen \textit{2 grupos en la poblacion}
+  \begin{alertblock}{Test de Jarque-Bera}
+    \[\textbf{JB} = \frac{n}{6}(S^2 +\frac{1}{4}(K - 3)^3)\] Siendo \textit{n} los grados de libertad
+  \end{alertblock}
+
+  \begin{block}{Estimadores de momentos centrales}
+    \begin{itemize}
+        \item Tercer Momento Central
+          \[S = \frac{\hat{\mu}_3}{\hat{\sigma}^3}\]
+
+        \item  Cuarto Momento Central
+         \[K = \frac{\hat{\mu}_4}{\hat{\sigma}^4}\]
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  Adicionalmente, se usara el test de \textit{Kolmogorov-Smirnov}, donde se plantea
+  que la distribucion de ingresos en la poblacion de ciencia de datos
+  no sigue la ley normal y se comparará con la funcion acumulada teoria
+  de esta
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Conclusiones hipotesis 1}
+  Ever no te olvides de las Conclusiones
 \end{frame}
 
 
 \begin{frame}
 \frametitle{Hipotesis 2}
+  Antes de realizar cualquier tecnica de inferencia es necesario conocer
+  la forma de las distribuciones, incluso antes de analizar la varianza
+
 \begin{figure}[h]
   \caption{Distribución de ingresos de ingenieros de
   software en la India}
-  \includegraphics[width=8cm]{distribucion_ingresos_sw.jpeg}
+  \includegraphics[width=6cm]{distribucion_ingresos_sw.jpeg}
 \end{figure}
 
   se puede notar como existen \textit{2 grupos en la poblacion}
 \end{frame}
-\section{Conclusiones}
 
-%---------------------------------------------------------
 \begin{frame}
-\frametitle{Conclusiones}
+  \frametitle{Distribución de los trabajadores en software}
+  \alert{Aplicacion del test \textbf{Kolmogórov-Smirnov}}
 
-In this slide, some important text will be
-\alert{highlighted} because it's important.
-Please, don't abuse it.
+  En este caso se va a comprar la funcion de distribucion acumulada observada
+  con la de la distribucion teoria de la normal y la de pareto
 
-\begin{block}{Remark}
-Sample text
-\end{block}
-
-\begin{alertblock}{Important theorem}
-Sample text in red box
-\end{alertblock}
-
-\begin{examples}
-Sample text in green box. The title of the block is ``Examples".
-\end{examples}
 \end{frame}
-%---------------------------------------------------------
+
+%\section{Conclusiones}
+
+%%---------------------------------------------------------
+%\begin{frame}
+%\frametitle{Conclusiones}
+
+%\begin{block}{Remark}
+%Sample text
+%\end{block}
+
+%\begin{alertblock}{Important theorem}
+%Sample text in red box
+%\end{alertblock}
+
+%\begin{examples}
+%Sample text in green box. The title of the block is ``Examples".
+%\end{examples}
+%\end{frame}
+%%---------------------------------------------------------
 
 
-%---------------------------------------------------------
-%Two columns
-\begin{frame}
-\frametitle{Two-column slide}
+%%---------------------------------------------------------
+%%Two columns
+%\begin{frame}
+%\frametitle{Two-column slide}
 
-\begin{columns}
+%\begin{columns}
 
-\column{0.5\textwidth}
-This is a text in first column.
-$$E=mc^2$$
-\begin{itemize}
-\item First item
-\item Second item
-\end{itemize}
+%\column{0.5\textwidth}
+%This is a text in first column.
+%$$E=mc^2$$
+%\begin{itemize}
+%\item First item
+%\item Second item
+%\end{itemize}
 
-\column{0.5\textwidth}
-This text will be in the second column
-and on a second tought this is a nice looking
-layout in some cases.
-\end{columns}
-\end{frame}
-%---------------------------------------------------------
+%\column{0.5\textwidth}
+%This text will be in the second column
+%and on a second tought this is a nice looking
+%layout in some cases.
+%\end{columns}
+%\end{frame}
+%%---------------------------------------------------------
 
 \end{document}
