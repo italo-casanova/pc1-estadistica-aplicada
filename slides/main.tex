@@ -109,10 +109,10 @@ socio-economicas se ha procedio a realizar un analisis estadistico sobre
   \begin{itemize}
       \item La distribucion de ingresos de  sigue
         la ley normal
-      \item La eleccion de especialidad es causa de la formacion de 2 grupos
-        en la poblacion.
       \item La distribución de ingresos de los trabajadores en software
         no sigue una distribución exponencial
+      \item Las distribuciones de Delhi y Bangalore provienen de la
+        misma poblacion
   \end{itemize}
 
 \column{0.5\textwidth}
@@ -155,35 +155,8 @@ socio-economicas se ha procedio a realizar un analisis estadistico sobre
 \section{Importancia de los objetivos}
 
 \begin{frame}
-  \textbf{\textit{
-    Acerca de la normalidad de la distribucion de ingesos
-  }}
-  \\
-  \alert{Ever no te olvides del texto}
-  \newline
-
   \textit{\textbf{
-    Sobre la eleccion de especialidad
-  }}
-
-  % \newline
-
-  Se desea analizar principalmente:
-
-  \begin{enumerate}
-      \item Si la eleccion de la especializacion es causa de la
-        formacion de 2 clusters en la poblacion
-
-      \item Que tan confiable resulta usar \textbf{ANOVA} \footnotemark
-  \end{enumerate}
-  \footnotetext[1]{\textit{Analysis of Variance}}
-
-
-\end{frame}
-
-\begin{frame}
-  \textit{\textbf{
-    Sobre los demas objetivos
+    Sobre los demas objetivos en general
   }}
   \newline
 
@@ -191,6 +164,28 @@ socio-economicas se ha procedio a realizar un analisis estadistico sobre
   información relevante para el análisis del mercado laboral
   para los egresados de la carrera de \textit{Ingenieria de
   sistemas}
+
+\end{frame}
+
+
+\begin{frame}
+  \textbf{\textit{
+    Acerca de la forma de las distribuciones
+  }}
+
+  Antes de realizar cualquier tecnica de inferencia es necesario conocer
+  la forma de las distribuciones, incluso antes de analizar la varianza
+
+  \textbf{
+    Sobre el analisis a realizar
+  }
+
+  Si bien se puede realizar \textbf{ANOVA} \footnotemark para cualquier distribucion
+  las tecnicas de test parametricos requieren de la normalidad para admitir un error de
+  tipo 1 del \text{5\%}
+
+  \footnotetext[1]{\textit{Analysis of Variance}}
+
 
 \end{frame}
 
@@ -259,6 +254,9 @@ socio-economicas se ha procedio a realizar un analisis estadistico sobre
   no sigue la ley normal y se comparará con la funcion acumulada teoria
   de esta
 
+  \[H_0: \textrm{La distribucion de ingresos \textbf{NO sigue} la ley normal}\]
+  \[H_1: \textrm{La distribucion de ingresos \textbf{SIGUE} la ley normal}\]
+
 \end{frame}
 
 \begin{frame}
@@ -276,8 +274,6 @@ socio-economicas se ha procedio a realizar un analisis estadistico sobre
 
 \begin{frame}
 \frametitle{Hipotesis 2}
-  Antes de realizar cualquier tecnica de inferencia es necesario conocer
-  la forma de las distribuciones, incluso antes de analizar la varianza
 
 \begin{figure}[h]
   \caption{Distribución de ingresos de ingenieros de
@@ -324,6 +320,24 @@ socio-economicas se ha procedio a realizar un analisis estadistico sobre
   \frametitle{Conclusiones}
   De acuerdo al p-value obtenido no se puede rechazar la hipótesis nula
   \includegraphics[width=9cm]{hip2/p-val.jpg}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Hipotesis 3}
+
+  Se aplicó el test de \textit{Kruskal-Wallis} con la finalidad de:
+
+  \begin{itemize}
+      \item Verificar si las muestras de Delhi y Bangalore provienen de poblacines
+        distinteas
+  \end{itemize}
+
+  Para esto se realizo un procedimiento similar al de la hipotesis anterior
+
+  \begin{alertblock}{Consideracines del test}
+    El test de Kruskal-Wallis es el sustituto no parametrico del
+    \textit{"One way ANOVA"}, en el cual se necesita un factor independiente
+  \end{alertblock}
 \end{frame}
 
 \begin{frame}
@@ -385,15 +399,98 @@ socio-economicas se ha procedio a realizar un analisis estadistico sobre
 \begin{frame}
   Para muestras grandes: \[ET = \sqrt{\frac{S_1 ^ 2}{n_1} + \frac{S_2 ^ 2}{n_2}}\]
 
-\begin{columns}
-\column{0.5\textwidth}
-   $H_0: \mu_1 = \mu_2$ \\
-   $H_1: \mu_2 > \mu_2$
+  \begin{columns}
+  \column{0.5\textwidth}
+   \[H_0: \mu_1 = \mu_2\]
+   \[H_1: \mu_1 > \mu_2\]
 
-\column{0.5\textwidth}
+  \column{0.5\textwidth}
 
       \[\textit{Z} = \frac{\overline{X_1} - \overline{X_2}}{ET}\]
-\end{columns}
+      \newline
+
+  \end{columns}
+
+  Dado un error maximo permitido $\alpha = 0.05$, con \textit{$H_1$} indicando una cola unilateral
+  hacia la derecha $\rightarrow RC = {Z > 1.645}$
+
+  \[Z_{cal} = \frac{45.4036}{38.8528} = 29.2267\]
+
+  Como \textit{$Z_{cal} \in RC$} Se debe rechazar \textit{$H_0$} y concluir que
+  aquellas personas que ganan mas de 50K trabaja en promedio mas que las personas
+  que ganan menos de 50K
 
 \end{frame}
+
+\begin{frame}
+  \frametitle{Comparar proporciones de trabajadores segun sexo}
+  Sean $p_1 \textrm{ y } p_2$ la proporcion de trabajadores femeninos en \textit{Estados Unidos}
+  y \textit{Mexico} respectivamente
+
+  Siendo $n_1 = 14662,\textrm{ } x_1 = 4927 \textrm{ y } n_2 = 308, \textrm{ } x_2 = 69$ las cantidades totales
+  y de poblacion femenina en ambos paises
+
+  Dando como resultados:
+
+  \[
+    \hat{p} = \frac{4927 + 69}{14662 + 308} = 0.3245 \]
+  \[
+    \textrm{Error tipico: } \overline{p_1} - \overline{p_2}
+  \]
+
+  \[
+    ET = \sqrt{\frac{\hat{p}(1 - \hat{p})}{n_1} + \frac{\hat{p}(1 - \hat{p})}{n_2}} = 0.02695
+  \]
+
+\end{frame}
+
+\begin{frame}
+
+  \begin{columns}
+  \column{0.5\textwidth}
+   \[H_0: p_1 = p_2\]
+   \[H_1: p_1 > p_2\]
+
+  \column{0.5\textwidth}
+
+    Por \textbf{TCL}:
+      \[\textit{Z} = \frac{\overline{p}_1 - \overline{p}_2}{ET} \sim N(0, 1)\]
+      \newline
+
+  \end{columns}
+
+  Dado un error maximo permitido $\alpha = 0.05$, con \textit{$H_1$} indicando una cola unilateral
+  hacia la derecha $\rightarrow RC = {Z > 1.645}$
+
+  \[Z_{cal} = \frac{p_1 - p_2}{ET} = 4.15530\]
+
+  Como \textit{$Z_{cal} \in RC$} Se debe rechazar \textit{$H_0$} y concluir que
+  existe una mayor proporcion de mujeres trabajando en ciencia de datos en Estados
+  Unidos que en Mexico; sin embargo, ese analisis no puede ser tan confiable debido
+  a la diferencia del tamaño de las muestras
+
+\end{frame}
+
+\begin{frame}
+
+  \frametitle{Otras conclusiones}
+
+  \begin{itemize}
+    \item Se logra visualizar la formacion de 2 grupos en la poblacion
+      de Bangalore independientemente de la variable de analisis
+
+    \item La distribucion teoria a la que mejor se aproximan los ingresos
+      es la exponencial, la cual deberia de la distribución \textit{Gamma}
+
+    \item Los test no parametricos son muy suceptibles a :
+      \begin{enumerate}
+        \item outliers
+        \item Distribuciones con ligeras desviaciones de las teoricas
+        \item Gran cantidad de data
+      \end{enumerate}
+  \end{itemize}
+
+
+\end{frame}
+
 \end{document}
