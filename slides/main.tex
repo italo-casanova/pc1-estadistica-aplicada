@@ -107,12 +107,12 @@ socio-economicas se ha procedio a realizar un analisis estadistico sobre
 \column{0.5\textwidth}
 
   \begin{itemize}
-      \item La distribucion de ingresos de  sigue *
+      \item La distribucion de ingresos de  sigue
         la ley normal
-      \item Las personas que trabajan una cantidad de horas superior a *
+      \item Las personas que trabajan una cantidad de horas superior a
         la media tienen una mejor destribucion de ingresos que aquellas
         que no lo hacen
-      \item En paises desarrollados existe una mayor cantidad *
+      \item En paises desarrollados existe una mayor cantidad
         de mujeres con puestos de trabajos relacionados a ingenieria que en paises en via
         de desarrollo
   \end{itemize}
@@ -120,11 +120,11 @@ socio-economicas se ha procedio a realizar un analisis estadistico sobre
 \column{0.5\textwidth}
 
   \begin{itemize}
-      \item Los cientificos de datos poseen un mejor distribucion de ingresos *
+      \item Los cientificos de datos poseen un mejor distribucion de ingresos
         que los ingenieros de datos
-      \item El sector \textit{(publico / privado)} al que pertenece un trabajador *
+      \item El sector \textit{(publico / privado)} al que pertenece un trabajador
         es causa de la diferencia de salarios
-      \item El promedio de ingresos de la poblacion mexicana es mayor *
+      \item El promedio de ingresos de la poblacion mexicana es mayor
         que la peruana
   \end{itemize}
 \end{columns}
@@ -140,8 +140,9 @@ socio-economicas se ha procedio a realizar un analisis estadistico sobre
         de ingreso de personas que laburan una cantidad menor de horas
         que la mediana
       \item Las personas de mediana edad poseen una mejor distribucion
-        de ingreso que las personas jovenes *
-      \item Pareto
+        de ingreso que las personas jovenes
+      \item La eleccion de especialidad es causa de la formacion de 2 grupos
+        en la poblacion.
   \end{itemize}
 
   \textbf{Cada hipotesis tiene asociado el objetivo de comprobar
@@ -153,8 +154,8 @@ socio-economicas se ha procedio a realizar un analisis estadistico sobre
 
 
 %---------------------------------------------------------
-%Example of the \pause command
-\frametitle{Importancia de los objetivos}
+\section{Importancia de los objetivos}
+
 \begin{frame}
   \textbf{\textit{
     Acerca de la normalidad de la distribucion de ingesos
@@ -173,41 +174,76 @@ socio-economicas se ha procedio a realizar un analisis estadistico sobre
       \item Comparar
 
   \end{enumerate}
-
 \end{frame}
 
 \begin{frame}
   \textit{\textbf{
-    Sobre la especialidad de la carrera
+    Sobre la eleccion de especialidad
   }}
-  \\
+  \newline
+
+  Antes de realizar cualquier tecnica de inferencia es necesario conocer
+  la forma de las distribuciones, incluso antes de analizar la varianza
+  \newline
 
   Se desea analizar principalmente:
-  \begin{enumerate}
-      \item Si aquellas personas que se dedican al desarrollo
-        de \textit{SW} tienen un ingreso medio mayor al de la
-        poblacion.
 
+  \begin{enumerate}
       \item Si la eleccion de la especializacion es causa de la
         formacion de 2 clusters en la poblacion
-  \end{enumerate}
 
-  Para esto se empleara un test de diferencia de medias asi como
-  el \textbf{ANOVA} o analisis de la varianza mediante el pivote
-  \textit{F}
+      \item Que tan confiable resulta usar \textbf{ANOVA} \footnotemark
+  \end{enumerate}
+  \footnotetext[1]{\textit{Analysis of Variance}}
+
+
 
 \end{frame}
+
 %---------------------------------------------------------
+
+
 \section{Resultados}
 \begin{frame}
 \frametitle{Hipotesis 1}
-  Se usara el test de \textit{Kolmogorov-Smirnov}, donde se plantea
-  que la distribucion de ingresos en la poblacin de ciencia de datos
-  no sigue la ley normal
-\begin{figure}[t]
-  \caption{Data sin estandarizar}
-  \includegraphics[width=6cm]{Figure_1.png}
-\end{figure}
+  Se aplicó el test de \textit{Jarque-Bera}, para comprobar si la muestra
+  presenta una \textbf{curtosis} y \textbf{asimetria} correspondientes
+  a una ley normal.
+
+  El estadistico de \textit{Jarque Bera} es asintoticamente un pivote de
+  una \textit{Chi-Cuadrado} y toma como hipotesis nula que los datos de la
+  muestra siguen la ley normal
+
+  \begin{alertblock}{Test de Jarque-Bera}
+    $\textbf{JB} = \frac{n}{6}(S^2 +\frac{1}{4}(K - 3)^3)$, Siendo \textit{n} los grados de libertad
+  \end{alertblock}
+
+  \begin{block}{Estimadores de momentos centrales}
+    \begin{itemize}
+        \item Tercer Momento Central
+
+          $S = \frac{\hat{\mu_3}}{\hat{\sigma}^3}$
+
+        \item  Cuarto Momento Central
+
+          $K = \frac{\hat{\mu_4}}{\hat{\sigma}^4}$
+
+    \end{itemize}
+  \end{block}
+
+\end{frame}
+
+\begin{frame}
+
+  Adicionalmente, se usara el test de \textit{Kolmogorov-Smirnov}, donde se plantea
+  que la distribucion de ingresos en la poblacion de ciencia de datos
+  no sigue la ley normal y se comparará con la funcion acumulada teoria
+  de esta
+  \begin{figure}[t]
+    \caption{Data sin estandarizar}
+    \includegraphics[width=5cm]{Figure_1.png}
+  \end{figure}
+
 \end{frame}
 
 \begin{frame}
@@ -235,11 +271,16 @@ socio-economicas se ha procedio a realizar un analisis estadistico sobre
 \end{frame}
 
 \begin{frame}
-\frametitle{Hipotesis 2}
+\frametitle{Distribución de software}
+  \alert{Aplicacion del test \textbf{Kolmogórov-Smirnov}}
+
+  En este caso se va a comprar la funcion de distribucion acumulada observada
+  con la de la distribucion teoria de la normal y la de pareto
+
 \begin{figure}[h]
   \caption{Distribución de ingresos de ingenieros de
   software en la India}
-  \includegraphics[width=8cm]{distribucion_ingresos_sw.jpeg}
+  \includegraphics[width=7cm]{distribucion_ingresos_sw.jpeg}
 \end{figure}
 
   se puede notar como existen \textit{2 grupos en la poblacion}
