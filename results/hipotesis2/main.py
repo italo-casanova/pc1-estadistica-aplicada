@@ -71,25 +71,28 @@ if __name__ == "__main__":
 
     sw_ingresos = np.array(sw_ingresos)
     sw_ingresos = sw_ingresos - min -200000 - 100000 
-    sw_ingresos = 3*sw_ingresos / 1e6 + 1
-    # count, bins, _ = plt.hist((sw_ingresos),bins= 15, density = True)
+    sw_ingresos = 2.7*sw_ingresos / 1e6 + 1
+    count, bins, _ = plt.hist((sw_ingresos),bins= 15, density = True)
 
     # pareto distribution to fit the data
     x_m = 1
-    alpha = 0.4
+    alpha = 0.45
     # print(stats.pareto.fit(sw_ingresos))
     # plot pdf 
-    plt.show()
+    # plt.show()
     size = 10
     divisions = size * 100
-    # plt.plot(np.linspace(0, size, divisions), stats.pareto.pdf(np.linspace(0, size, divisions),scale= x_m, b= alpha))
+    # plt.plot(np.linspace(0, size, divisions), stats.pareto.pdf(np.linspace(0, size, divisions),scale= x_m, b= alpha, loc= 0))
+    plt.plot(np.linspace(0, size, divisions), stats.pareto.pdf(np.linspace(0, size, divisions),alpha, 0, x_m))
+
     
 
     # render the histograms
     plt.show()
 
     # draw a qq plot
-    stats.probplot(sw_ingresos, dist=stats.pareto, sparams=(alpha,1,x_m), plot=plt)
+    rv = stats.pareto(alpha, 0, x_m)
+    stats.probplot(sw_ingresos, dist=rv, plot=plt)
 
     # plot a qq plot
     plt.show()
