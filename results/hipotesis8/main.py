@@ -97,6 +97,10 @@ if __name__ == "__main__":
     # kuskal wallis test
     print("Kuskal Wallis Test")
     print(stats.kruskal(sw_data_income_bangalore, sw_data_income_delhi))
+
+    # qq plot both groups against each other
+    print("QQ Plot")
+    stats.probplot(sw_data_income_bangalore, dist="norm", plot=plt)
     
 
 
