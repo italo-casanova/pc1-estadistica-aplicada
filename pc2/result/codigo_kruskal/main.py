@@ -10,7 +10,7 @@ import process.unpack as unpack
 import process.analyze as analyzer
 import process.visualize as visualize
 
-data_sim1 = unpack.unpack("data//data_wilcoxon//05-06-22.csv")
+data_sim1 = unpack.unpack("data//data_kruskal//06-01-2020.csv")
 
 print("Wilcoxon test for the first simulation")
 print("=====================================")
