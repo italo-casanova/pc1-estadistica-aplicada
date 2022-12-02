@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.10.19)  29 OCT 2022 02:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.10.19)  29 OCT 2022 03:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1255,39 +1255,26 @@ Overfull \hbox (232.87024pt too wide) has occurred while \output is active
 [32
 
  <./images//cajas1.jpeg>]
-<./images//Screenshot_20221028_234650.png, id=1008, 621.07031pt x 374.90062pt>
-File: ./images//Screenshot_20221028_234650.png Graphic file (type png)
-<use ./images//Screenshot_20221028_234650.png>
-Package pdftex.def Info: ./images//Screenshot_20221028_234650.png  used on inpu
-t line 398.
-(pdftex.def)             Requested size: 341.43306pt x 206.09872pt.
-
 Overfull \hbox (232.87024pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 [33
 
- <./images//Screenshot_20221028_234650.png (PNG copy)>]
-<./images//cajas2.jpeg, id=1035, 543.02875pt x 296.10625pt>
-File: ./images//cajas2.jpeg Graphic file (type jpg)
-<use ./images//cajas2.jpeg>
-Package pdftex.def Info: ./images//cajas2.jpeg  used on input line 407.
-(pdftex.def)             Requested size: 170.71652pt x 93.0887pt.
-
+]
 Overfull \hbox (232.87024pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 [34
 
- <./images//cajas2.jpeg>]
-<./images//Screenshot_20221028_235052.png, id=1063, 529.98pt x 387.69844pt>
-File: ./images//Screenshot_20221028_235052.png Graphic file (type png)
-<use ./images//Screenshot_20221028_235052.png>
-Package pdftex.def Info: ./images//Screenshot_20221028_235052.png  used on inpu
-t line 414.
-(pdftex.def)             Requested size: 284.52756pt x 208.1413pt.
+]
+<./images//Screenshot_20221028_234650.png, id=1065, 621.07031pt x 374.90062pt>
+File: ./images//Screenshot_20221028_234650.png Graphic file (type png)
+<use ./images//Screenshot_20221028_234650.png>
+Package pdftex.def Info: ./images//Screenshot_20221028_234650.png  used on inpu
+t line 436.
+(pdftex.def)             Requested size: 341.43306pt x 206.09872pt.
 
 Overfull \hbox (232.87024pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
@@ -1295,12 +1282,12 @@ Overfull \hbox (232.87024pt too wide) has occurred while \output is active
 
 [35
 
- <./images//Screenshot_20221028_235052.png (PNG copy)>]
-<./images//cuyate1.png, id=1090, 328.22626pt x 225.84375pt>
-File: ./images//cuyate1.png Graphic file (type png)
-<use ./images//cuyate1.png>
-Package pdftex.def Info: ./images//cuyate1.png  used on input line 421.
-(pdftex.def)             Requested size: 284.52756pt x 195.77946pt.
+ <./images//Screenshot_20221028_234650.png (PNG copy)>]
+<./images//cajas2.jpeg, id=1092, 543.02875pt x 296.10625pt>
+File: ./images//cajas2.jpeg Graphic file (type jpg)
+<use ./images//cajas2.jpeg>
+Package pdftex.def Info: ./images//cajas2.jpeg  used on input line 445.
+(pdftex.def)             Requested size: 170.71652pt x 93.0887pt.
 
 Overfull \hbox (232.87024pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
@@ -1308,16 +1295,13 @@ Overfull \hbox (232.87024pt too wide) has occurred while \output is active
 
 [36
 
- <./images//cuyate1.png (PNG copy)>]
-<./images//cuyate2.png, id=1117, 291.33844pt x 231.11343pt>
-File: ./images//cuyate2.png Graphic file (type png)
-<use ./images//cuyate2.png>
-Package pdftex.def Info: ./images//cuyate2.png  used on input line 429.
-(pdftex.def)             Requested size: 284.52756pt x 225.72789pt.
-
-Overfull \vbox (4.6573pt too high) detected at line 429
- []
-
+ <./images//cajas2.jpeg>]
+<./images//Screenshot_20221028_235052.png, id=1119, 529.98pt x 387.69844pt>
+File: ./images//Screenshot_20221028_235052.png Graphic file (type png)
+<use ./images//Screenshot_20221028_235052.png>
+Package pdftex.def Info: ./images//Screenshot_20221028_235052.png  used on inpu
+t line 452.
+(pdftex.def)             Requested size: 284.52756pt x 208.1413pt.
 
 Overfull \hbox (232.87024pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
@@ -1325,12 +1309,12 @@ Overfull \hbox (232.87024pt too wide) has occurred while \output is active
 
 [37
 
- <./images//cuyate2.png (PNG copy)>]
-<./images//alvares1.png, id=1145, 618.05907pt x 246.1697pt>
-File: ./images//alvares1.png Graphic file (type png)
-<use ./images//alvares1.png>
-Package pdftex.def Info: ./images//alvares1.png  used on input line 438.
-(pdftex.def)             Requested size: 284.52756pt x 113.32957pt.
+ <./images//Screenshot_20221028_235052.png (PNG copy)>]
+<./images//cuyate1.png, id=1147, 328.22626pt x 225.84375pt>
+File: ./images//cuyate1.png Graphic file (type png)
+<use ./images//cuyate1.png>
+Package pdftex.def Info: ./images//cuyate1.png  used on input line 459.
+(pdftex.def)             Requested size: 284.52756pt x 195.77946pt.
 
 Overfull \hbox (232.87024pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
@@ -1338,21 +1322,37 @@ Overfull \hbox (232.87024pt too wide) has occurred while \output is active
 
 [38
 
- <./images//alvares1.png (PNG copy)>]
+ <./images//cuyate1.png (PNG copy)>]
+<./images//cuyate2.png, id=1175, 291.33844pt x 231.11343pt>
+File: ./images//cuyate2.png Graphic file (type png)
+<use ./images//cuyate2.png>
+Package pdftex.def Info: ./images//cuyate2.png  used on input line 467.
+(pdftex.def)             Requested size: 284.52756pt x 225.72789pt.
+
+Overfull \vbox (4.6573pt too high) detected at line 467
+ []
+
+
 Overfull \hbox (232.87024pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 [39
 
-]
+ <./images//cuyate2.png (PNG copy)>]
+<./images//alvares1.png, id=1202, 618.05907pt x 246.1697pt>
+File: ./images//alvares1.png Graphic file (type png)
+<use ./images//alvares1.png>
+Package pdftex.def Info: ./images//alvares1.png  used on input line 476.
+(pdftex.def)             Requested size: 284.52756pt x 113.32957pt.
+
 Overfull \hbox (232.87024pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 [40
 
-]
+ <./images//alvares1.png (PNG copy)>]
 Overfull \hbox (232.87024pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
  []
@@ -1365,6 +1365,20 @@ Overfull \hbox (232.87024pt too wide) has occurred while \output is active
  []
 
 [42
+
+]
+Overfull \hbox (232.87024pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+[43
+
+]
+Overfull \hbox (232.87024pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+[44
 
 ]
 \tf@nav=\write6
@@ -1387,27 +1401,30 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: E9ED1C5EECB7D026C18FE3FAFA0C88B3;537.
  ) 
 Here is how much of TeX's memory you used:
- 23711 strings out of 478238
- 460458 string characters out of 5850455
+ 23725 strings out of 478238
+ 460594 string characters out of 5850455
  719789 words of memory out of 5000000
- 41339 multiletter control sequences out of 15000+600000
- 483740 words of font info for 78 fonts, out of 8000000 for 9000
+ 41346 multiletter control sequences out of 15000+600000
+ 484787 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,435b,909s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></us
-r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss
-i9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (42 pages, 723367 bytes).
+c/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi
+8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/sh
+are/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb>
+Output written on main.pdf (44 pages, 752921 bytes).
 PDF statistics:
- 1355 PDF objects out of 1440 (max. 8388607)
- 1200 compressed objects within 12 object streams
- 89 named destinations out of 1000 (max. 500000)
+ 1425 PDF objects out of 1440 (max. 8388607)
+ 1261 compressed objects within 13 object streams
+ 93 named destinations out of 1000 (max. 500000)
  396 words of extra memory for PDF output out of 10000 (max. 10000000)
 

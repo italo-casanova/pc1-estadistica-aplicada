@@ -392,9 +392,47 @@ socio-economicas se ha procedio a realizar un analisis estadistico sobre
 
 \begin{frame}
   \frametitle{Test de hipotesis}
+
+ como se puede observar, las alturas de ambos diagras difieren significativamente, por lo que se consideran poblaciones
+  con varianza diferentes
+
+  Estadistico de prueba:
+  \[
+    \textrm{\textit{t}} = \frac{\overline{X}_1 - \overline{X}_2 - (\mu_1 - \mu_2)}{\sqrt{\frac{{S_1^2}}{n_1} + \frac{{S_2^2}}{n_2}}}
+    \sim \textrm{\textit{t}}_{(\upsilon)}
+  \]
+
+  \[
+    \upsilon = \frac{(\frac{S_1^2}{n_1} + \frac{S_2^2}{n_2})^2}{\frac{(\frac{S_1}{n_1})^2}{n_1 - 1} + \frac{(\frac{S_2}{n_2})^2}{n_2 - 1}}
+  \]
+
+
+  con un nivel de significancia $\alpha = 0.05$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Conclusiones}
+reemplazando datos:
+
+  \textit{t} = 4,7424
+  \newline
+  $\upsilon = 149$
+  \\
+  \textbf{Region critica: }
+
+  $t_{(149, 0.95)} = 1.655144$
+
+  Se rechaza la hipotesis nula al ser el valor critico menor que el estadistico de prueba
+
+  \textbf{Conclusion}\\
+\end{frame}
+
+\begin{frame}
 \begin{figure}[t]
     \includegraphics[width=12cm]{Screenshot_20221028_234650.png}
 \end{figure}
+
 \end{frame}
 
 \begin{frame}
