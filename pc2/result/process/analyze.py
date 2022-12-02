@@ -56,3 +56,21 @@ def filter_by_column_floats(data: list, filter_column: int,  class_name: str, co
     #         numbers.append(float(row[column]))
     return [float(row[column]) for row in data[1:]
     if class_name in  row[filter_column] or class_name == "*"]
+
+def select_by_column_qualitative(data: list, filter_column: int,  filter: str) -> list:
+    """select the data in a column. Returns a list containing the data that matches the filter"""
+    selected = []
+    for row in data:
+        filter_name = row[filter_column]
+        if filter_name == filter:
+            selected.append(row)
+
+    return selected
+
+def select_column_floats(data: list, column: int) -> list:
+    """select the data of floats in a column. """
+    selected = []
+    for row in data:
+        selected.append(float(row[column]))
+
+    return selected
