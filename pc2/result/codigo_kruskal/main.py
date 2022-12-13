@@ -36,13 +36,13 @@ print(stats.kruskal(notas_comas, notas_santa_beatriz, notas_villa_el_salvador))
 # plot the graphs in the same figure with subplots
 fig, axs = plt.subplots(2, 2)
 fig.suptitle('Kruskal-Wallis Test')
-axs[0, 0].hist(notas_comas,bins = 5)
+axs[0, 0].hist(notas_comas,bins = 5, density = True)
 axs[0, 0].set_title('Comas')
-axs[0, 1].hist(notas_santa_beatriz, bins = 5)
+axs[0, 1].hist(notas_santa_beatriz, bins = 5, density = True)
 axs[0, 1].set_title('Santa Beatriz')
-axs[1, 0].hist(notas_los_olivos, bins = 5)
+axs[1, 0].hist(notas_los_olivos, bins = 5, density = True)
 axs[1, 0].set_title('Los Olivos')
-axs[1, 1].hist(notas_villa_el_salvador, bins = 5)
+axs[1, 1].hist(notas_villa_el_salvador, bins = 5, density = True)
 axs[1, 1].set_title('Villa el Salvador')
 
 # plot the graphs as boxplots int he same figure with the same scale

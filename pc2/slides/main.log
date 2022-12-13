@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.10.15)  13 DEC 2022 00:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.10.15)  13 DEC 2022 01:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -947,19 +947,13 @@ Overfull \hbox (406.20773pt too wide) has occurred while \output is active
 [15
 
 ]
-<cap/images/wilcoxon/resultados.jpg, id=468, 587.94656pt x 109.1578pt>
-File: cap/images/wilcoxon/resultados.jpg Graphic file (type jpg)
-<use cap/images/wilcoxon/resultados.jpg>
-Package pdftex.def Info: cap/images/wilcoxon/resultados.jpg  used on input line 39.
-(pdftex.def)             Requested size: 342.2953pt x 63.54974pt.
-
 Overfull \hbox (406.20773pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 [16
 
- <./cap/images/wilcoxon/resultados.jpg>])
+])
 Overfull \hbox (406.20773pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
  []
@@ -986,17 +980,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: C6238F8430815A373C7D15E6F33B6826;363.
  ) 
 Here is how much of TeX's memory you used:
- 23577 strings out of 478338
- 471610 string characters out of 2834811
+ 23570 strings out of 478338
+ 471361 string characters out of 2834811
  731093 words of memory out of 3000000
- 41428 multiletter control sequences out of 15000+600000
+ 41422 multiletter control sequences out of 15000+600000
  477798 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,16n,122p,543b,574s stack positions out of 10000i,1000n,20000p,200000b,80000s
-<C:/Users/4verBurga/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/4verBurga/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/4verBurga/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/4verBurga/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/4verBurga/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/4verBurga/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/4verBurga/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/4verBurga/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi8.pfb>
-Output written on main.pdf (17 pages, 785039 bytes).
+<C:/Users/4verBurga/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/4verBurga/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/4verBurga/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/4verBurga/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/4verBurga/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/4verBurga/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/4verBurga/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/4verBurga/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/4verBurga/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Users/4verBurga/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/4verBurga/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on main.pdf (17 pages, 800296 bytes).
 PDF statistics:
- 565 PDF objects out of 1000 (max. 8388607)
+ 579 PDF objects out of 1000 (max. 8388607)
  38 named destinations out of 1000 (max. 500000)
- 201 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 196 words of extra memory for PDF output out of 10000 (max. 10000000)
 

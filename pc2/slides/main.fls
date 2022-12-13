@@ -1440,13 +1440,6 @@ INPUT .\cap\images\wilcoxon\semestral.jpg
 INPUT .\cap\images\wilcoxon\semestral.jpg
 INPUT C:\Users\4verBurga\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\4verBurga\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
-INPUT .\cap\images\wilcoxon\resultados.jpg
-INPUT .\cap\images\wilcoxon\resultados.jpg
-INPUT cap\images\wilcoxon\resultados.jpg
-INPUT .\cap\images\wilcoxon\resultados.jpg
-INPUT .\cap\images\wilcoxon\resultados.jpg
-INPUT .\cap\images\wilcoxon\resultados.jpg
-INPUT .\cap\images\wilcoxon\resultados.jpg
 OUTPUT main.nav
 OUTPUT main.toc
 OUTPUT main.snm
@@ -1468,6 +1461,8 @@ INPUT cap\wilcoxon.aux
 INPUT cap\wilcoxon.aux
 INPUT .\main.out
 INPUT .\main.out
+INPUT C:\Users\4verBurga\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
+INPUT C:\Users\4verBurga\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\4verBurga\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\4verBurga\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\4verBurga\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
@@ -1484,3 +1479,7 @@ INPUT C:\Users\4verBurga\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfon
 INPUT C:\Users\4verBurga\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmssi10.pfb
 INPUT C:\Users\4verBurga\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmssi8.pfb
 INPUT C:\Users\4verBurga\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmssi8.pfb
+INPUT C:\Users\4verBurga\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\4verBurga\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\4verBurga\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT C:\Users\4verBurga\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
