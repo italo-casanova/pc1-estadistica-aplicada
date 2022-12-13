@@ -1294,16 +1294,7 @@ INPUT C:\Users\4verBurga\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmss8
 INPUT C:\Users\4verBurga\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmssbx10.tfm
 INPUT C:\Users\4verBurga\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmss8.tfm
 INPUT C:\Users\4verBurga\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT .\main.toc
-INPUT main.toc
-INPUT main.toc
-INPUT .\main.toc
-INPUT main.toc
-INPUT main.toc
 INPUT C:\Users\4verBurga\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmss12.tfm
-INPUT .\main.toc
-INPUT main.toc
-INPUT main.toc
 INPUT .\cap\kruskal_wallis.tex
 OUTPUT cap\kruskal_wallis.aux
 INPUT .\cap\kruskal_wallis.tex
@@ -1456,9 +1447,6 @@ INPUT .\cap\images\wilcoxon\resultados.jpg
 INPUT .\cap\images\wilcoxon\resultados.jpg
 INPUT .\cap\images\wilcoxon\resultados.jpg
 INPUT .\cap\images\wilcoxon\resultados.jpg
-INPUT .\main.toc
-INPUT main.toc
-INPUT main.toc
 OUTPUT main.nav
 OUTPUT main.toc
 OUTPUT main.snm
