@@ -15,13 +15,13 @@
 
 \subtitle{
   Caso: Distribucion de notas de estudiantes de la academia
-    Trilce en los ultimos 3 años
+    Trilce en los ultimos 4 años
 }
 
 \author % (optional)
 {
-  Alvarez \and Bautista \and Burga, Ever \and
-  Casanova, Italo \and  Cuyate, Brayan
+  Alvarez, Sandro \and Bautista, Walter \and Burga, Ever \and
+    Casanova, Italo \and  Cuyate, Brayan
 }
 
 \institute
@@ -78,67 +78,21 @@
   Universidad Nacional de Ingenieria en la academia Trilce
 \end{alertblock}
 \end{frame}
-
-\begin{frame}
-\frametitle{Objetivos especificos}
-
-\begin{columns}
-\column{0.5\textwidth}
-
-  \begin{itemize}
-      \item Probar si alguna de las medianas de la distribución del examen general del 6 de enero de 2020
-      de acuerdo a sede difiere con un nivel de significancia del 5\% con la prueba de Kruskal-Wallis.
-      \item Comparar el desempeño de los estudiantes antes de tomar un ciclo
-        de repaso y despues de este.
-      \item Comparar la evolucion del desempeño de aquellos que tomaron más de un simulacro.
-
-  \end{itemize}
-
-\column{0.5\textwidth}
-
-  \begin{itemize}
-      \item Comparar la potencia entre el test de \textit{Wilcoxon} y
-      el \textit{Test de signos}
-  \end{itemize}
-\end{columns}
-\end{frame}
-
-%---------------------------------------------------------
-
-\begin{frame}
-\frametitle{Hipotesis especificas}
-  \begin{itemize}
-      \item Las personas que trabajan una cantidad de horas superior a
-        la media tienen una mejor destribucion de ingresos que aquellas
-        que no lo hacen
-      \item Las personas de mediana edad poseen una mejor distribucion
-        de ingreso que las personas jovenes
-      \item El promedio de ingresos de la poblacion mexicana es mayor
-        que la peruana
-  \end{itemize}
-
-\end{frame}
+s
 
 %---------------------------------------------------------
 \section{Metodología y Resultados}
 
 \include{cap/kruskal_wallis.tex}
 
-\begin{frame}
-  \frametitle{Test de Signos}
+\include{cap/rachas.tex}
 
+\include{cap/u_test.tex}
 
-\end{frame}
+\include{cap/signos.tex}
 
-\begin{frame}
-  \frametitle{Test de Wilcoxon}
+\include{cap/wilcoxon.tex}
 
-  Si bien, el test de signos puede cumplir la misma funcion que el de
-  \textbf{Wilcoxon}, este ultimo tiene mayor potencia al momento de
-  detectar diferencia de medias.
-
-
-\end{frame}
 
 %---------------------------------------------------------
 
@@ -146,16 +100,15 @@
 \section{Conclusiones}
 
 \begin{frame}
-  \frametitle{Hipotesis 1}
-  
-
-\end{frame}
-
-
-\begin{frame}
-
-  \frametitle{Otras conclusiones}
-
+  \frametitle{Conclusiones}
+  \begin{itemize}
+    \item El ciclo de repaso no ha mejorado las notas de los estudiantes de la academia Trilce. Sin embargo 
+    esto podría deberse a que el examen después de repaso fue más complicado que el examen antes de repaso, cosa que no 
+    tenemos por seguro. 
+    \item La distribución de estudiantes de Villa el Salvador es diferente a la de los demás distritos como mínimo. 
+    \item Las mujeres y hombres tienen un desempeño similar en el examen de repaso.
+    \item Existe diferencia en el desempeño pre-pandemia y post-pandemia de los estudiantes de la academia Trilce.
+  \end{itemize}
 \end{frame}
 
 \end{document}
